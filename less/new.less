@@ -1,0 +1,326 @@
+
+@import "common/reset";
+
+@green: #7ec61c;
+@333: #333;
+@666: #666;
+@white: #fff;
+
+html,body {
+	width: 100%;
+}
+
+body {
+	background: @white;
+}
+
+#container {
+	position: relative;
+
+	width: 100%;
+
+	.content {
+		position: relative;
+
+		width: 100%;
+
+		.top-wra {
+			position: relative;
+
+			.top-img {
+				width: 100%;
+
+				img {
+					display: block;
+
+					width: 100%;
+				}
+			}
+
+			.search-wra {
+				position: absolute;
+				left: 50%;
+				top: 60%;
+				z-index: 10;
+
+				width: 460-12px;
+				height: 64-24px;
+				padding: 12px 0 12px 12px;
+				margin-left: -448/2px;
+				margin-top: -40/2px;
+
+				background: rgba(85,141,234,.9);
+
+				.clearFix();
+
+				.form-key {
+					position: relative;
+
+					float: left;
+
+					width: 358px;
+					height: 40px;
+
+					border-radius: 35px;
+
+					background: #fff;
+
+					overflow: hidden;
+
+					.search-img {
+						position: absolute;
+						left: 12px;
+						top: 10px;
+						z-index: 1;
+
+						display: block;
+					}
+
+					.form-input {
+						display: block;
+
+						width: 358-34-40px;
+						height: 40px;
+						padding: 0 34px 0 40px;
+
+						color: #999;
+						font-size: 24px;
+						line-height: 40px;
+					}
+				}
+
+				.form-btn {
+					float: left;
+
+					margin-left: 20px;
+
+					font-size: 26px;
+					color: #fff;
+					line-height: 40px;
+
+					cursor: pointer;
+				}
+			}
+
+			.active {
+				background: #3b7fea;
+			}
+		}
+
+		/*导航*/
+		.navBar {
+			width: 100%;
+			height: 60px;
+			margin: 0 auto;
+
+			border: 2px solid #3b7fea;
+
+			box-shadow: 10px 5px 5px #dddddd;
+
+			box-sizing: border-box;
+
+			.nav-item {
+				float: left;
+
+				display: block;
+				width: 50%;
+				height: 56px;
+
+				font-size: 22px;
+				text-align: center;
+				color: #3b7fea;
+				line-height: 56px;
+				font-weight: bold;
+
+				background: #fff;
+
+				box-sizing: border-box;
+
+				.nav-dec {
+					display: inline-block;
+
+					.clearFix();
+
+					.nav-img {
+						float: left;
+
+						margin-top: 18px;
+
+						.old-img {
+							display: block;
+						}
+
+						.news-img {
+							display: none;
+						}
+					}
+
+					.nav-text {
+						float: left;
+
+						margin-left: 14px;
+					}
+				}
+			}
+
+			.active {
+				color: #fff;
+
+				background: #3b7fea;
+
+				.nav-dec {
+
+					.nav-img {
+
+						.old-img {
+							display: none;
+						}
+
+						.news-img {
+							display: block;
+						}
+					}
+				}
+			}
+		}
+
+		/*热点新闻*/
+		.hotNews {
+			padding: 20px 20px 10px 20px;
+
+			border-bottom: 1px solid #ddd;
+
+			.hotNews-title {
+				padding-top: 10px;
+
+				font-size: 34px;
+				color: #000;
+				font-weight: bold;
+				line-height: 44px;
+			}
+
+			.hotNews-dec {
+				padding-top: 10px;
+
+				font-size: 26px;
+				color: #000;
+				line-height: 40px;
+			}
+
+			.hotNews-video {
+				position: relative;
+
+				width: 600px;
+				height: 241px;
+				margin-top: 10px;
+
+				.video {
+					display: block;
+
+					width: 600px;
+					height: 241px;
+				}
+
+				.video-bg {
+					position: absolute;
+					left: 0;
+					top: 0;
+					z-index: 1;
+
+					width: 100%;
+					height: 100%;
+				}
+
+				.play-btn {
+					position: absolute;
+					left: 50%;
+					top: 50%;
+					z-index: 10;
+
+					-webkit-transform: translate(-50%,-50%);
+				}
+			}
+
+			.hotNews-bottom {
+				padding-top: 15px;
+
+				color: #999;
+				font-size: 22px;
+
+				.clearFix();
+
+				.hotNews-time {
+					float: left;
+				}
+
+				.hotNews-browse {
+					float: left;
+
+					margin-left: 30px;
+				}
+
+				.hotNews-share {
+					float: right;
+
+					.clearFix();
+
+					.share-key {
+						float: left;
+
+						margin-top: 7px;
+					}
+
+					.share-val {
+						float: left;
+
+						margin-left: 10px;
+					}
+				}
+			}
+		}
+
+		/*新闻列表*/
+		.scroll-wra {
+			width: 100%;
+			height: 600px;
+
+			overflow: hidden;
+
+			.list {
+
+				.item {
+
+					.item-infor {
+
+						.item-title {
+
+						}
+
+						.item-dec {
+
+						}
+
+						.item-bottom {
+
+							.item-time {
+
+							}
+
+							.item-browse {
+
+							}
+
+							.item-share {
+
+							}
+						}
+					}
+
+					.item-img {
+
+					}
+				}
+			}
+		}
+	}
+}

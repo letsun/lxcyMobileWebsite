@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=640, user-scalable=no">
+    <title></title>
+    <link rel="stylesheet" href="../scripts/plugins/swiper/swiper-3.3.1.min.css">
+    <link rel="stylesheet" href="../css/aboutUs.css">
+</head>
+<body>
+
+<div id="container">
+
+    <!--主体-->
+    <div class="content">
+        
+        <!--顶部图片-->
+        <div class="top-img">
+            <img src="../images/7_1.png" alt="">
+        </div>
+
+        <!--轮播图-->
+        <div class="swiper-box">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="../images/7_4.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../images/7_5.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../images/7_6.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../images/7_7.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../images/7_8.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../images/7_9.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../images/7_10.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../images/7_11.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../images/7_12.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../images/7_13.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../images/7_14.png" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="../images/7_15.png" alt="">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img src="../images/7_16.png" alt="">
+                    </div>
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <img class="swiper-btn prev" id="prev" src="../images/7_2.png" alt="">
+            <img class="swiper-btn next" id="next" src="../images/7_3.png" alt="">
+        </div>
+
+
+        <!--模块-->
+        <div class="module-wra">
+            <div class="module module_1">
+
+                <div class="banner">
+                    <div class="banner-item first-banner-item">
+                        <img class="banner-img" src="../images/7_16.png" alt="">
+                        <div class="banner-title">深圳市双软企业</div>
+                    </div>
+                    <div class="banner-item">
+                        <img class="banner-img" src="../images/7_17.png" alt="">
+                        <div class="banner-title">国家高新技术企业</div>
+                    </div>
+                    <div class="banner-item">
+                        <img class="banner-img" src="../images/7_18.png" alt="">
+                        <div class="banner-title">深圳市高新技术企业</div>
+                    </div>
+
+                </div>
+
+                <!--荣誉-->
+                <div class="honor-wra">
+                    <div class="honor">
+                        <div class="honor-list">
+                            <div class="honor-item">
+                                国家高新技术企业
+                            </div>
+
+                            <div class="honor-item">
+                                深圳市高新技术企业
+                            </div>
+
+                            <div class="honor-item">
+                                深圳市双软企业
+                            </div>
+
+                            <div class="honor-item">
+                                十九项知识产权
+                            </div>
+
+                            <div class="honor-item">
+                                第四届中国开源软件大赛创新奖
+                            </div>
+
+                        </div>
+
+                        <div class="honor-list last-honor-list">
+                            <div class="honor-item">
+                                第二届中国食品饮料峰会技术代表
+                            </div>
+
+                            <div class="honor-item">
+                                阿里巴巴二维码软件技术指定服务商
+                            </div>
+
+                            <div class="honor-item">
+                                中移物联网指定技术服务商
+                            </div>
+
+                            <div class="honor-item">
+                                智联招聘移动技术服务商
+                            </div>
+
+                            <div class="honor-item">
+                                凤凰卫视广东卫视等媒体多次报道
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="module module_2">
+                <img src="../images/7_19.png" alt="">
+            </div>
+
+            <div class="module module_3">
+                <img src="../images/7_20.png" alt="">
+            </div>
+
+            <div class="module module_4">
+                <div class="aims-list">
+                    <div class="aims-item">
+                        通过二维码联接人、物、场
+                    </div>
+
+                    <div class="aims-item">
+                        借力大数据新技术为渠道动销赋能
+                    </div>
+
+                    <div class="aims-item">
+                        把营销资源精准的投放在每一次消费行为中
+                    </div>
+
+                    <div class="aims-item">
+                        打造人工智能精准智慧营销，助力企业新零售转型
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../scripts/lib/jquery-2.2.2.min.js"></script>
+<script src="../scripts/lib/config.js"></script>
+<script src="../scripts/lib/common.js"></script>
+<script src="../scripts/plugins/swiper/swiper-3.3.1.jquery.min.js"></script>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        loop:true,
+        autoplay:2000,
+        pagination : '.swiper-pagination',
+        nextButton: '#next',
+        prevButton: '#prev'
+    });
+</script>
+</body>
+</html>
+

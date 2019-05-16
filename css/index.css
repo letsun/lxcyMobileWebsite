@@ -76,12 +76,9 @@ body {
   margin: 0 auto;
   position: relative;
 }
-.clearFix:before,
 .clearFix:after {
   content: " ";
   display: table;
-}
-.clearFix:after {
   clear: both;
 }
 .pullLeft {
@@ -125,12 +122,9 @@ body {
   background: rgba(0, 0, 0, 0.6);
   box-sizing: border-box;
 }
-#container .header:before,
 #container .header:after {
   content: " ";
   display: table;
-}
-#container .header:after {
   clear: both;
 }
 #container .header .logo {

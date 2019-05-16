@@ -1,0 +1,315 @@
+body,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+form {
+  margin: 0;
+  padding: 0;
+}
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+body {
+  color: #333;
+  font: normal normal normal 28px/40px 'Microsoft YaHei', Arial, sans-serif;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -moz--tap-highlight-color: rgba(0, 0, 0, 0);
+  -o--tap-highlight-color: rgba(0, 0, 0, 0);
+}
+img {
+  border: 0;
+}
+input[type="text"],
+input[type="password"],
+textarea,
+button {
+  vertical-align: middle;
+  -webkit-appearance: none;
+  font-family: 'Microsoft YaHei', Arial, sans-serif;
+  border: none;
+  outline: none;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+}
+select {
+  outline: none;
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  outline: none;
+}
+table {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+table td {
+  padding: 0;
+}
+textarea {
+  resize: none;
+  cursor: pointer;
+}
+body {
+  max-width: 768px;
+  margin: 0 auto;
+  position: relative;
+}
+.clearFix:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+.pullLeft {
+  float: left;
+}
+.pullRight {
+  float: right;
+}
+.textCenter {
+  text-align: center;
+}
+.textRight {
+  text-align: right;
+}
+.ellipsisNormal {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+html,
+body {
+  width: 100%;
+}
+body {
+  background: #fff;
+}
+#container {
+  position: relative;
+  width: 100%;
+}
+#container .content {
+  position: relative;
+  width: 100%;
+  /*导航*/
+  /*热点新闻*/
+  /*新闻列表*/
+}
+#container .content .top-wra {
+  position: relative;
+}
+#container .content .top-wra .top-img {
+  width: 100%;
+}
+#container .content .top-wra .top-img img {
+  display: block;
+  width: 100%;
+}
+#container .content .top-wra .search-wra {
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  z-index: 10;
+  width: 448px;
+  height: 40px;
+  padding: 12px 0 12px 12px;
+  margin-left: -224px;
+  margin-top: -20px;
+  background: rgba(85, 141, 234, 0.9);
+}
+#container .content .top-wra .search-wra:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+#container .content .top-wra .search-wra .form-key {
+  position: relative;
+  float: left;
+  width: 358px;
+  height: 40px;
+  border-radius: 35px;
+  background: #fff;
+  overflow: hidden;
+}
+#container .content .top-wra .search-wra .form-key .search-img {
+  position: absolute;
+  left: 12px;
+  top: 10px;
+  z-index: 1;
+  display: block;
+}
+#container .content .top-wra .search-wra .form-key .form-input {
+  display: block;
+  width: 284px;
+  height: 40px;
+  padding: 0 34px 0 40px;
+  color: #999;
+  font-size: 24px;
+  line-height: 40px;
+}
+#container .content .top-wra .search-wra .form-btn {
+  float: left;
+  margin-left: 20px;
+  font-size: 26px;
+  color: #fff;
+  line-height: 40px;
+  cursor: pointer;
+}
+#container .content .top-wra .active {
+  background: #3b7fea;
+}
+#container .content .navBar {
+  width: 100%;
+  height: 60px;
+  margin: 0 auto;
+  border: 2px solid #3b7fea;
+  box-shadow: 10px 5px 5px #dddddd;
+  box-sizing: border-box;
+}
+#container .content .navBar .nav-item {
+  float: left;
+  display: block;
+  width: 50%;
+  height: 56px;
+  font-size: 22px;
+  text-align: center;
+  color: #3b7fea;
+  line-height: 56px;
+  font-weight: bold;
+  background: #fff;
+  box-sizing: border-box;
+}
+#container .content .navBar .nav-item .nav-dec {
+  display: inline-block;
+}
+#container .content .navBar .nav-item .nav-dec:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+#container .content .navBar .nav-item .nav-dec .nav-img {
+  float: left;
+  margin-top: 18px;
+}
+#container .content .navBar .nav-item .nav-dec .nav-img .old-img {
+  display: block;
+}
+#container .content .navBar .nav-item .nav-dec .nav-img .news-img {
+  display: none;
+}
+#container .content .navBar .nav-item .nav-dec .nav-text {
+  float: left;
+  margin-left: 14px;
+}
+#container .content .navBar .active {
+  color: #fff;
+  background: #3b7fea;
+}
+#container .content .navBar .active .nav-dec .nav-img .old-img {
+  display: none;
+}
+#container .content .navBar .active .nav-dec .nav-img .news-img {
+  display: block;
+}
+#container .content .hotNews {
+  padding: 20px 20px 10px 20px;
+  border-bottom: 1px solid #ddd;
+}
+#container .content .hotNews .hotNews-title {
+  padding-top: 10px;
+  font-size: 34px;
+  color: #000;
+  font-weight: bold;
+  line-height: 44px;
+}
+#container .content .hotNews .hotNews-dec {
+  padding-top: 10px;
+  font-size: 26px;
+  color: #000;
+  line-height: 40px;
+}
+#container .content .hotNews .hotNews-video {
+  position: relative;
+  width: 600px;
+  height: 241px;
+  margin-top: 10px;
+}
+#container .content .hotNews .hotNews-video .video {
+  display: block;
+  width: 600px;
+  height: 241px;
+}
+#container .content .hotNews .hotNews-video .video-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+#container .content .hotNews .hotNews-video .play-btn {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 10;
+  -webkit-transform: translate(-50%, -50%);
+}
+#container .content .hotNews .hotNews-bottom {
+  padding-top: 15px;
+  color: #999;
+  font-size: 22px;
+}
+#container .content .hotNews .hotNews-bottom:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+#container .content .hotNews .hotNews-bottom .hotNews-time {
+  float: left;
+}
+#container .content .hotNews .hotNews-bottom .hotNews-browse {
+  float: left;
+  margin-left: 30px;
+}
+#container .content .hotNews .hotNews-bottom .hotNews-share {
+  float: right;
+}
+#container .content .hotNews .hotNews-bottom .hotNews-share:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+#container .content .hotNews .hotNews-bottom .hotNews-share .share-key {
+  float: left;
+  margin-top: 7px;
+}
+#container .content .hotNews .hotNews-bottom .hotNews-share .share-val {
+  float: left;
+  margin-left: 10px;
+}
+#container .content .scroll-wra {
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+}

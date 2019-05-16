@@ -1,0 +1,204 @@
+
+@import "common/reset";
+
+@green: #7ec61c;
+@333: #333;
+@666: #666;
+@white: #fff;
+
+html,body {
+	width: 100%;
+}
+
+body {
+	background: @white;
+}
+
+#container {
+	position: relative;
+
+	width: 100%;
+
+	.content {
+		position: relative;
+
+		width: 100%;
+
+		.top-img {
+			width: 100%;
+
+			img {
+				display: block;
+
+				width: 100%;
+			}
+		}
+
+		.swiper-box {
+			position: relative;
+
+			padding: 50px 0 40px 0;
+
+			.swiper-btn {
+				position: absolute;
+				top: 50%;
+				z-index: 10;
+
+				-webkit-transform: translateY(-50%);
+			}
+
+			.prev {
+				left: 4%;
+			}
+
+			.next {
+				right: 4%;
+			}
+		}
+
+		.swiper-container {
+			width: 502px;
+			height: 662px;
+			margin: 0 auto;
+
+			.swiper-slide {
+
+				img {
+					display: block;
+
+					width: 100%;
+					height: 662px;
+				}
+			}
+		}
+
+		.swiper-pagination {
+
+			.swiper-pagination-bullet {
+				width: 12px;
+				height: 12px;
+
+				opacity: 1;
+
+				background: #fff;
+			}
+
+			.swiper-pagination-bullet-active {
+				background: #007aff;
+			}
+		}
+
+		.module-wra {
+
+			.module {
+
+			}
+
+			.module_1 {
+
+				.banner {
+					margin: 0 auto;
+					width: 100%;
+
+					.clearFix();
+
+					.banner-item {
+						float: left;
+
+						width: 203px;
+						margin-left: 7.5px;
+
+						.banner-img {
+							width: 203px;
+						}
+
+						.banner-title {
+							position: relative;
+							z-index: 1;
+
+							width: 100%;
+							height: 40px;
+							margin-top: -5px;
+
+							line-height: 40px;
+							color: #fff;
+							text-align: center;
+							font-size: 20px;
+
+							background: #aaaaaa;
+						}
+					}
+
+				}
+
+				/*荣誉*/
+				.honor-wra {
+					width: 100%;
+					padding: 30px 0 50px 0;
+
+					.honor {
+						width: 100%;
+						margin: 0 auto;
+
+						.clearFix();
+
+						.honor-list {
+							float: left;
+
+							width: 320px;
+
+							.honor-item {
+								padding-top: 10px;
+
+								font-size: 18px;
+								line-height: 24px;
+								color: #000;
+								text-align: center;
+							}
+						}
+					}
+				}
+			}
+
+			.module_2 {
+
+				img {
+					display: block;
+
+					margin: 0 auto;
+				}
+			}
+
+			.module_3 {
+				margin: 30px auto 0 auto;
+
+				img {
+					display: block;
+
+					margin: 0 auto;
+				}
+			}
+
+			.module_4 {
+				margin: -1px auto 0 auto;
+
+				.aims-list {
+					width: 100%;
+					height: 389px;
+					padding: 116px 0 0 14px;
+
+					background: url('../images/7_21.png') no-repeat;
+					background-size: 100% 100%;
+
+					box-sizing: border-box;
+
+					.aims-item {
+						font-size: 20px;
+						line-height: 40px;
+						color: #fff;
+					}
+				}
+			}
+		}
+	}
+}
