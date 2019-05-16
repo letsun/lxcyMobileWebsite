@@ -76,12 +76,9 @@ body {
   margin: 0 auto;
   position: relative;
 }
-.clearFix:before,
 .clearFix:after {
   content: " ";
   display: table;
-}
-.clearFix:after {
   clear: both;
 }
 .pullLeft {
