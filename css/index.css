@@ -98,6 +98,9 @@ body {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+p {
+  max-height: 999999px;
+}
 html,
 body {
   width: 100%;
@@ -122,7 +125,8 @@ body {
   background: rgba(0, 0, 0, 0.6);
   box-sizing: border-box;
 }
-#container .header:after {  content: " ";
+.container .header:after {
+  content: " ";
   display: table;
   clear: both;
 }
@@ -499,10 +503,10 @@ body {
   line-height: 24px;
   border-top: 1px solid #999999;
   padding: 20px 19px;
-  font-size: 15px;
+  font-size: 18px;
 }
 .container .footer .copy-right {
-  font-size: 14px;
+  font-size: 17px;
   text-align: center;
   border-top: 1px solid #999999;
 }
