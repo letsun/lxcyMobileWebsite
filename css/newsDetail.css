@@ -116,8 +116,6 @@ body {
   position: relative;
   width: 100%;
   /*导航*/
-  /*热点新闻*/
-  /*新闻列表*/
 }
 #container .content .top-wra {
   position: relative;
@@ -235,35 +233,34 @@ body {
 #container .content .navBar .active .nav-dec .nav-img .news-img {
   display: block;
 }
-#container .content .hotNews {
+#container .content .info {
   padding: 20px 20px 10px 20px;
-  border-bottom: 1px solid #ddd;
 }
-#container .content .hotNews .hotNews-title {
+#container .content .info .news-title {
   padding-top: 10px;
   font-size: 34px;
   color: #000;
   font-weight: bold;
   line-height: 44px;
 }
-#container .content .hotNews .hotNews-dec {
+#container .content .info .news-dec {
   padding-top: 10px;
   font-size: 26px;
   color: #000;
   line-height: 40px;
 }
-#container .content .hotNews .hotNews-video {
+#container .content .info .news-video {
   position: relative;
   width: 600px;
   height: 241px;
   margin-top: 10px;
 }
-#container .content .hotNews .hotNews-video .video {
+#container .content .info .news-video .video {
   display: block;
   width: 600px;
   height: 241px;
 }
-#container .content .hotNews .hotNews-video .video-bg {
+#container .content .info .news-video .video-bg {
   position: absolute;
   left: 0;
   top: 0;
@@ -271,48 +268,119 @@ body {
   width: 100%;
   height: 100%;
 }
-#container .content .hotNews .hotNews-video .play-btn {
+#container .content .info .news-video .play-btn {
   position: absolute;
   left: 50%;
   top: 50%;
   z-index: 10;
   -webkit-transform: translate(-50%, -50%);
 }
-#container .content .hotNews .hotNews-bottom {
+#container .content .info .news-bottom {
   padding-top: 15px;
   color: #999;
   font-size: 22px;
+  border-bottom: 1px solid #ddd;
 }
-#container .content .hotNews .hotNews-bottom:after {
+#container .content .info .news-bottom:after {
   content: " ";
   display: table;
   clear: both;
 }
-#container .content .hotNews .hotNews-bottom .hotNews-time {
+#container .content .info .news-bottom .news-time {
   float: left;
 }
-#container .content .hotNews .hotNews-bottom .hotNews-browse {
+#container .content .info .news-bottom .news-browse {
   float: left;
   margin-left: 30px;
 }
-#container .content .hotNews .hotNews-bottom .hotNews-share {
+#container .content .info .news-bottom .news-share {
   float: right;
 }
-#container .content .hotNews .hotNews-bottom .hotNews-share:after {
+#container .content .info .news-bottom .news-share:after {
   content: " ";
   display: table;
   clear: both;
 }
-#container .content .hotNews .hotNews-bottom .hotNews-share .share-key {
+#container .content .info .news-bottom .news-share .share-key {
   float: left;
   margin-top: 7px;
 }
-#container .content .hotNews .hotNews-bottom .hotNews-share .share-val {
+#container .content .info .news-bottom .news-share .share-val {
   float: left;
   margin-left: 10px;
 }
-#container .content .scroll-wra {
-  width: 100%;
-  height: 600px;
+#container .content .btn-wra {
+  padding: 20px;
+  border-top: 10px solid #e5e5e5;
+}
+#container .content .btn-wra:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+#container .content .btn-wra .btn {
+  display: block;
+  line-height: 40px;
+}
+#container .content .btn-wra .btn:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+#container .content .btn-wra .btn .span1 {
+  float: left;
+  font-size: 26px;
+  font-weight: bold;
+}
+#container .content .btn-wra .btn .span2 {
+  float: left;
+  width: 500px;
+  margin-left: 16px;
+  font-size: 24px;
   overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+#container .content .btn-wra .back-list {
+  float: right;
+  margin: 0 0 0 auto;
+  font-size: 24px;
+  color: #3176eb;
+  line-height: 24px;
+  text-decoration: underline;
+}
+#container .content .related-news {
+  border-top: 10px solid #e5e5e5;
+}
+#container .content .related-news .related-header {
+  padding: 20px 20px 0 20px;
+  font-size: 26px;
+  font-weight: bold;
+  line-height: 40px;
+}
+#container .content .related-news .related-list .related-item {
+  padding: 10px 20px 10px 20px;
+  border-bottom: 1px solid #ddd;
+}
+#container .content .related-news .related-list .related-item .related-title {
+  font-size: 26px;
+  color: #000;
+  line-height: 40px;
+}
+#container .content .related-news .related-list .related-item .related-bottom {
+  font-size: 22px;
+  color: #999;
+  line-height: 22px;
+}
+#container .content .related-news .related-list .related-item .related-bottom:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+#container .content .related-news .related-list .related-item .related-bottom .related-time {
+  float: right;
+}
+#container .content .related-news .related-list .related-item .related-bottom .related-browse {
+  float: right;
+  margin-left: 30px;
 }
