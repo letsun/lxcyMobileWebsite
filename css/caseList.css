@@ -265,6 +265,7 @@ body {
   padding: 40px 20px;
   background: rgba(0, 0, 0, 0.7);
   box-sizing: border-box;
+  overflow: scroll;
 }
 .demand-win .demand-content {
   width: 100%;
@@ -404,28 +405,63 @@ body {
 }
 .demand-win .demand-content .form .check-wra .check-list .check-item {
   float: left;
+  margin-left: 18px;
 }
 .demand-win .demand-content .form .check-wra .check-list .check-item:after {
   content: " ";
   display: table;
   clear: both;
 }
+.demand-win .demand-content .form .check-wra .check-list .check-item:first-child {
+  margin-left: 0;
+}
 .demand-win .demand-content .form .check-wra .check-list .check-item .check-border {
   position: relative;
   float: left;
   width: 14px;
   height: 14px;
+  margin-top: 2px;
   border: 1px solid #ddd;
+  border-radius: 50%;
 }
 .demand-win .demand-content .form .check-wra .check-list .check-item .check-border .check-point {
-  width: 4px;
-  height: 4px;
-  margin: auto;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  display: none;
+  width: 8px;
+  height: 8px;
+  margin-left: -4px;
+  margin-top: -4px;
   border-radius: 50%;
   background: #3176eb;
 }
 .demand-win .demand-content .form .check-wra .check-list .check-item .check-text {
   float: left;
+  margin-left: 10px;
   font-size: 20px;
   color: #000;
+  line-height: 20px;
+}
+.demand-win .demand-content .form .check-wra .check-list .active .check-border {
+  border: 1px solid #3176eb;
+}
+.demand-win .demand-content .form .check-wra .check-list .active .check-border .check-point {
+  display: block;
+}
+.demand-win .demand-content .form .submit-btn {
+  width: 100%;
+  height: 48px;
+  margin: 40px auto 0 auto;
+  font-size: 24px;
+  line-height: 48px;
+  text-align: center;
+  color: #3176eb;
+  border: 1px solid #3176eb;
+  box-sizing: border-box;
+}
+.demand-win .demand-content .close-demand {
+  display: block;
+  margin: 76px auto 0 auto;
 }
