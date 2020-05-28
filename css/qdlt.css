@@ -115,7 +115,7 @@ body {
   height: 100%;
 }
 #container .header {
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   z-index: 99;
@@ -220,7 +220,7 @@ body {
   color: #fff;
 }
 #container .footer {
-  background: #3176eb;
+  background: #3176eb ;
 }
 #container .footer .footer-header {
   text-align: center;

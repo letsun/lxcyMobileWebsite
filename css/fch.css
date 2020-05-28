@@ -115,7 +115,7 @@ body {
   height: 100%;
 }
 #container .header {
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   z-index: 99;
@@ -382,14 +382,14 @@ body {
   padding-right: 60px;
 }
 #container .content .content-six .content-six-con ul li {
-  color: #3176eb;
+  color: #3176eb ;
 }
 #container .content .content-six .content-six-con ul li span {
   color: #000000;
   font-size: 24px;
 }
 #container .footer {
-  background: #3176eb;
+  background: #3176eb ;
 }
 #container .footer .footer-header {
   text-align: center;
