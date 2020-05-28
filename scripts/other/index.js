@@ -116,7 +116,7 @@ $(function() {
 					if (i <= 13) {
                         html += '<li>'
                         html += '	<img src="' + caseList[i].imgUrl + '">'
-                        html += '	<p class="demo-img-content">' + caseList[i].title + '</p>'
+                        html += '	<div class="demo-img-content">' + caseList[i].title + '</div>'
                         html += '</li>'
 					}
 
@@ -266,26 +266,26 @@ $(function() {
 
 					var html = '';
 					html += '<li>'
-					html += '	<h4 class="news-title">' + hotNews[0].title + '</h4>'
-					html += '	<p>' + hotNews[0].desc + '</p>'
+					html += '	<div class="news-title">' + hotNews[0].title + '</div>'
+					html += '	<div class="news-desc">' + hotNews[0].desc + '</div>'
 					html += '	<img class="hot-img" src="' + hotNews[0].thumbnail + '">'
-					html += '	<p class="data-share">'
+					html += '	<div class="data-share">'
 					html += '		<span class="news-date">' + hotNews[0].publishTime + '</span>'
 					html += '		<span class="times">' + hotNews[0].browseNum + '人浏览</span>'
 					html += '		<span class="share"><img src="../images/1_52.png">分享</span>'
-					html += '	</p>'
+					html += '	</div>'
 					html += '</li>'
 
 					for (var i = 0; i < newsList.length; i++) {
 						html += '<li>'
-						html += '	<h4 class="news-title">' + newsList[i].title + '</h4>'
-						html += '	<p class="news-content">' + newsList[i].desc + '</p>'
+						html += '	<div class="news-title">' + newsList[i].title + '</div>'
+						html += '	<div class="news-content">' + newsList[i].desc + '</div>'
 						html += '	<img src="' + newsList[i].thumbnail + '" class="news-img">'
-						html += '	<p class="data-share">'
+						html += '	<div class="data-share">'
 						html += '		<span class="news-date">' + newsList[i].publishTime + '</span>'
 						html += '		<span class="times">' + newsList[i].browseNum + '人浏览</span>'
 						html += '		<span class="share"><img src="../images/1_52.png">分享</span>'
-						html += '	</p>'
+						html += '	</div>'
 						html += '</li>'
 					}
 					$('.news-list').append(html);

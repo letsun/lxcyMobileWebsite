@@ -99,5 +99,5 @@ body {
   white-space: nowrap;
 }
 p {
-  max-height: 999999px;
+  max-height: 999999px!important;
 }

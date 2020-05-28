@@ -99,7 +99,7 @@ body {
   white-space: nowrap;
 }
 p {
-  max-height: 999999px;
+  max-height: 999999px!important;
 }
 html,
 body {
@@ -402,6 +402,13 @@ body {
   color: #323232;
   margin-top: 30px;
   margin-bottom: 20px;
+}
+.container .content .module-wra .module3 .news li .news-desc {
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
 }
 .container .content .module-wra .module3 .news li .news-content {
   float: left;
