@@ -1,0 +1,234 @@
+@import "common/reset";
+
+@green: #7ec61c;
+@333: #333;
+@666: #666;
+@white: #fff;
+
+html,body {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	background: @white;
+}
+
+#container {
+	position: relative;
+
+	width: 100%;
+	height: 100%;
+	
+	.header {
+		position: absolute;
+		left: 0;
+		top: 0;
+		z-index: 99;
+	
+		width: 100%;
+		height: 80px;
+		padding: 18px 0;
+	
+		background: rgba(0,0,0,.6);
+	
+		box-sizing: border-box;
+	
+		.clearFix();
+	
+		.logo {
+			float: left;
+	
+			margin-left: 30px;
+		}
+	
+		.nav-wra {
+			float: right;
+	
+			.nav-btn {
+				margin-right: 30px;
+	
+				.nav-img {
+					display: none;
+				}
+	
+				.old-img {
+					display: block;
+					padding-top: 8px;
+				}
+				
+				.new-img {
+					display: none;
+					font-size: 60px;
+					color: #fff;
+				}
+			}
+		}
+	
+		.nav-list {
+			position: absolute;
+			left: 0;
+			top: 80px;
+			z-index: 1;
+	
+			width: 90%;
+			color: #999999;
+			background-color: #333333;
+			padding: 0 5%;
+			padding-bottom: 60px;
+			
+			display: none;
+			
+			.nav-item{
+				width: 100%;
+				height: 60px;
+				line-height: 60px;
+				font-size: 24px;
+				
+				padding: 0 2%;
+				border-bottom: 1px solid #666666;
+				
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				justify-content: space-between;
+				box-sizing: border-box;
+	
+				.nav-right{
+					display: block;
+					width: 15px;
+					height: 50px;
+					margin-top: 5px;
+					
+					img{
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+	
+	// 主题内容
+	.content{
+		width: 100%;
+		
+		.banner-img{
+			display: block;
+			width: 100%;
+		}
+		
+		.module-wrap{
+			.module{
+				text-align: center;
+				
+				.module-title{
+					line-height: 73px;
+					font-size: 29px;
+					font-weight: bold;
+					
+					margin-top: 36px;
+				}
+				.module-text{
+					font-size: 19px;
+					line-height: 25px;
+				}
+				.module-img{
+					display: block;
+					margin: 44px auto 0;
+				}
+			}
+			
+			.market-wrap{
+				position: relative;
+				
+				.market-content{
+					width: 293px;
+					position: absolute;
+					
+					.market-title{
+						font-size: 29px;
+						font-weight: bold;
+					}
+					.market-text{
+						font-size: 24px;
+						color: #666;
+					}
+				}
+				.market-content1{
+					left: 29px;
+					top: 45px;
+				}
+				.market-content2{
+					right: 29px;
+					top: 275px;
+				}
+				.market-content3{
+					left: 29px;
+					bottom: 40px;
+				}
+			}
+		}
+		
+		.free-use-wrap{
+			width: 100%;
+			position: relative;
+			
+			.free-btn{
+				position: absolute;
+				right: 28px;
+				bottom: 76px;
+			}
+		}
+		// 数据分析
+		.data-analysis{
+			margin-top: 104px;
+			
+			.data-analysis-img{
+				display: block;
+				margin: 0 auto;
+			}
+			.data-step{
+				display: flex;
+				align-items: center;
+				flex-wrap: wrap;
+				justify-content: space-around;
+				position: relative;
+				
+				padding: 0 29px;
+				margin-bottom: 65px;
+				.data-item{
+					width: 254px;
+					height: 265px;
+					text-align: center;
+					border: 2px solid #f65d3b;
+					margin-top: 60px;
+					
+					.data-item-title{
+						font-size: 24px;
+						font-weight: bold;
+						
+						margin: 25px auto 15px;
+					}
+					.data-item-text{
+						font-size: 18px;
+						color: #666;
+					}
+				}
+				.data-title{
+					width: 156px;
+					height: 156px;
+					line-height: 156px;
+					text-align: center;
+					background-image: url(../images/3_7.png);
+					background-repeat: no-repeat;
+					background-size: cover;
+					border-radius: 50%;
+					
+					position: absolute;
+					top: 265px;
+				}
+			}
+		}
+	}
+	
+}

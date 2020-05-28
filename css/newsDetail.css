@@ -111,6 +111,7 @@ body {
 #container {
   position: relative;
   width: 100%;
+  overflow: hidden;
 }
 #container .content {
   position: relative;
@@ -249,6 +250,9 @@ body {
   color: #000;
   line-height: 40px;
 }
+#container .content .info .news-dec img {
+  width: 100%;
+}
 #container .content .info .news-video {
   position: relative;
   width: 600px;
@@ -359,6 +363,7 @@ body {
   line-height: 40px;
 }
 #container .content .related-news .related-list .related-item {
+  max-height: 9999px;
   padding: 10px 20px 10px 20px;
   border-bottom: 1px solid #ddd;
 }

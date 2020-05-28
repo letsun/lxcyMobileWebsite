@@ -12,16 +12,57 @@
 <div id="container">
 
 	<!--头部-->
+	<!--头部-->
 	<div class="header">
 		<img class="logo" src="../images/1_1.png" alt="">
 		<div class="nav-wra">
 			<div class="nav-btn">
 				<img class="nav-img old-img" src="../images/1_2.png" alt="">
-				<div class="nav-img new-img"></div>
+				<div class="nav-img new-img">×</div>
 			</div>
 		</div>
 		<div class="nav-list">
-
+			<a href="sczs.html">
+				<div class="nav-item">
+					<span class="nav-text">追溯系统</span>
+					<span class="nav-right"><img src="../images/7_3.png"></span>
+				</div>
+			</a>
+			<a href="zhyx.html">
+				<div class="nav-item">
+					<span class="nav-text">智慧营销</span>
+					<span class="nav-right"><img src="../images/7_3.png"></span>
+				</div>
+			</a>
+			
+			<a href="caseList.html">
+				<div class="nav-item">
+					<span class="nav-text">客户案例</span>
+					<span class="nav-right"><img src="../images/7_3.png"></span>
+				</div>
+			</a>
+			
+			<a href="solution.html">
+				<div class="nav-item">
+					<span class="nav-text">解决方案</span>
+					<span class="nav-right"><img src="../images/7_3.png"></span>
+				</div>
+			</a>
+			
+			<a href="news.html">
+				<div class="nav-item">
+					<span class="nav-text">新闻资讯</span>
+					<span class="nav-right"><img src="../images/7_3.png"></span>
+				</div>
+			</a>
+			
+			<a href="aboutUs.html">
+				<div class="nav-item">
+					<span class="nav-text">关于我们</span>
+					<span class="nav-right"><img src="../images/7_3.png"></span>
+				</div>
+			</a>
+		
 		</div>
 	</div>
 
@@ -39,45 +80,23 @@
 			<div class="tab-item">追踪溯源</div>
 			<div class="tab-item">申请试用</div>
 		</div>
-
-		<div class="case-list">
-			<a class="case-item" href="#">
-				<img class="case-img" src="../images/2_47.png" alt="">
-				<div class="case-title">东鹏特饮</div>
-				<div class="case-dec">
-					<div class="dec-key">服务内容</div>
-					<div class="dec-val">服务内容</div>
-				</div>
-			</a>
-
-			<a class="case-item" href="#">
-				<img class="case-img" src="../images/2_47.png" alt="">
-				<div class="case-title">东鹏特饮</div>
-				<div class="case-dec">
-					<div class="dec-key">服务内容</div>
-					<div class="dec-val">服务内容</div>
-				</div>
-			</a>
-
-			<a class="case-item" href="#">
-				<img class="case-img" src="../images/2_47.png" alt="">
-				<div class="case-title">东鹏特饮</div>
-				<div class="case-dec">
-					<div class="dec-key">服务内容</div>
-					<div class="dec-val">服务内容</div>
-				</div>
-			</a>
-
-			<a class="case-item" href="#">
-				<img class="case-img" src="../images/2_47.png" alt="">
-				<div class="case-title">东鹏特饮</div>
-				<div class="case-dec">
-					<div class="dec-key">服务内容</div>
-					<div class="dec-val">服务内容</div>
-				</div>
-			</a>
+		
+		<div class="scroll-wra" id="scrollWrapper">
+			<!-- <div class="list" id="list"></div> -->
+			<div class="case-list" id="case-list">
+				<!-- <a class="case-item" href="#">
+					<img class="case-img" src="../images/2_47.png" alt="">
+					<div class="case-title">东鹏特饮</div>
+					<div class="case-dec">
+						<div class="dec-key">服务内容</div>
+						<div class="dec-val">服务内容</div>
+					</div>
+				</a> -->
+				
+			</div>
+			<div id="loading"></div>
 		</div>
-
+	
 		<img class="load-img" src="../images/4_3.png" alt="">
 	</div>
 
@@ -104,16 +123,16 @@
 				<div class="form-title">合作意向表</div>
 
 				<div class="form-item">
-					<input class="form-input" type="text" placeholder="公司名称">
+					<input class="form-input company" type="text" placeholder="公司名称">
 				</div>
 
 				<div class="form-item">
-					<input class="form-input" type="text" placeholder="邮箱">
+					<input class="form-input email" type="text" placeholder="邮箱">
 				</div>
 
 				<div class="form-item">
-					<input class="form-input form-other-input" type="text" placeholder="姓名">
-					<input class="form-input form-other-input" type="text" placeholder="电话">
+					<input class="form-input form-other-input name" type="text" placeholder="姓名">
+					<input class="form-input form-other-input mobile" maxlength="11" type="text" placeholder="电话">
 				</div>
 
 				<div class="text3">您希望</div>
@@ -166,11 +185,14 @@
 			<img src="../images/4_6.png" alt="" class="close-demand">
 		</div>
 	</div>
+	
 </div>
 
 <script src="../scripts/lib/jquery-2.2.2.min.js"></script>
 <script src="../scripts/lib/config.js"></script>
 <script src="../scripts/lib/common.js"></script>
+<script src="../scripts/plugins/bscroll.js"></script>
+<script src="../scripts/other/caseList.js"></script>
 
 </body>
 </html>

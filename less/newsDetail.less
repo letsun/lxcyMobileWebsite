@@ -18,7 +18,8 @@ body {
 	position: relative;
 
 	width: 100%;
-
+	overflow: hidden;
+	
 	.content {
 		position: relative;
 
@@ -202,6 +203,10 @@ body {
 				font-size: 26px;
 				color: #000;
 				line-height: 40px;
+				
+				img{
+					width: 100%;
+				}
 			}
 
 			.news-video {
@@ -337,6 +342,7 @@ body {
 			.related-list {
 
 				.related-item {
+					max-height: 9999px;
 					padding: 10px 20px 10px 20px;
 
 					border-bottom: 1px solid #ddd;

@@ -104,6 +104,7 @@ p {
 html,
 body {
   width: 100%;
+  height: 100%;
 }
 body {
   background: #fff;
@@ -111,6 +112,8 @@ body {
 #container {
   position: relative;
   width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 #container .content {
   position: relative;
@@ -311,76 +314,87 @@ body {
   float: left;
   margin-left: 10px;
 }
-#container .content .scroll-wra {
-  width: 100%;
-  height: 600px;
-  overflow: hidden;
-}
-#container .content .scroll-wra .list .item {
+#container .content .list .item {
   position: relative;
   display: block;
   min-height: 210px;
   padding: 30px 20px 20px 20px;
   border-bottom: 1px solid #ddd;
 }
-#container .content .scroll-wra .list .item .item-infor {
+#container .content .list .item .item-infor {
   margin-right: 242px;
 }
-#container .content .scroll-wra .list .item .item-infor .item-title {
+#container .content .list .item .item-infor .item-title {
   padding-top: 10px;
   font-size: 34px;
   color: #000;
   font-weight: bold;
   line-height: 44px;
 }
-#container .content .scroll-wra .list .item .item-infor .item-dec {
+#container .content .list .item .item-infor .item-dec {
   padding-top: 10px;
   font-size: 26px;
   color: #000;
   line-height: 40px;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
 }
-#container .content .scroll-wra .list .item .item-infor .item-bottom {
+#container .content .list .item .item-infor .item-bottom {
   padding-top: 15px;
   color: #999;
   font-size: 20px;
 }
-#container .content .scroll-wra .list .item .item-infor .item-bottom:after {
+#container .content .list .item .item-infor .item-bottom:after {
   content: " ";
   display: table;
   clear: both;
 }
-#container .content .scroll-wra .list .item .item-infor .item-bottom .item-time {
+#container .content .list .item .item-infor .item-bottom .item-time {
   float: left;
 }
-#container .content .scroll-wra .list .item .item-infor .item-bottom .item-browse {
+#container .content .list .item .item-infor .item-bottom .item-browse {
   float: left;
   margin-left: 30px;
 }
-#container .content .scroll-wra .list .item .item-infor .item-bottom .item-share {
+#container .content .list .item .item-infor .item-bottom .item-share {
   float: right;
 }
-#container .content .scroll-wra .list .item .item-infor .item-bottom .item-share:after {
+#container .content .list .item .item-infor .item-bottom .item-share:after {
   content: " ";
   display: table;
   clear: both;
 }
-#container .content .scroll-wra .list .item .item-infor .item-bottom .item-share .share-key {
+#container .content .list .item .item-infor .item-bottom .item-share .share-key {
   float: left;
   margin-top: 7px;
 }
-#container .content .scroll-wra .list .item .item-infor .item-bottom .item-share .share-val {
+#container .content .list .item .item-infor .item-bottom .item-share .share-val {
   float: left;
   margin-left: 10px;
 }
-#container .content .scroll-wra .list .item .item-img {
+#container .content .list .item .item-img {
   position: absolute;
   top: 90px;
   right: 20px;
   z-index: 1;
   width: 224px;
   height: 150px;
+  overflow: hidden;
 }
-#container .content .scroll-wra .load-img {
+#container .content .list .item .item-img img {
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+#container .content .list .load-img {
   display: block;
   margin: 30px auto;
   -webkit-transform: rotate(180deg);
