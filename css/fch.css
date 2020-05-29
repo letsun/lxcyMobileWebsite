@@ -382,14 +382,14 @@ body {
   padding-right: 60px;
 }
 #container .content .content-six .content-six-con ul li {
-  color: #3176eb ;
+  color: #3176eb;
 }
 #container .content .content-six .content-six-con ul li span {
   color: #000000;
   font-size: 24px;
 }
 #container .footer {
-  background: #3176eb ;
+  background: #3176eb;
 }
 #container .footer .footer-header {
   text-align: center;
@@ -403,6 +403,35 @@ body {
 #container .footer .footer-img {
   text-align: center;
   padding-bottom: 60px;
+}
+#container .tab {
+  display: flex;
+  width: 100%;
+  background: #3178ea;
+}
+#container .tab .tab-item {
+  flex: 1;
+  padding: 15px 0;
+}
+#container .tab .tab-item img {
+  display: block;
+  width: 170px;
+  margin: 0 auto;
+}
+#container .wechat-mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  background: rgba(0, 0, 0, 0.8);
+}
+#container .wechat-mask .wechat-img {
+  position: absolute;
+  top: 35%;
+  left: 23%;
+  width: 54%;
 }
 .info-three .module1 {
   display: flex;
@@ -530,9 +559,8 @@ body {
 .info-three .module4 .module-dec .dec-con .list .item span {
   display: inline-block;
   color: #3176eb;
-  font-size: 30px;
+  font-size: 20px;
   line-height: 30px;
-  vertical-align: bottom;
 }
 .info-three .module4 .module-dec .dec-con .dec-left {
   float: left;
@@ -557,12 +585,12 @@ body {
 }
 .info-three .module4 .module-dec .dec-con .dec-center {
   float: left;
-  width: 330px;
-  margin: 44px 0 0 -76px;
+  width: 400px;
+  margin: 20px 0 0 -100px;
 }
 .info-three .module4 .module-dec .dec-con .dec-right {
   float: right;
-  margin-left: -80px;
+  margin-left: -130px;
 }
 .info-three .module4 .module-dec .dec-con .dec-right .list3 {
   width: 200px;

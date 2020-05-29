@@ -115,6 +115,78 @@ body {
   height: 100%;
   overflow: hidden;
 }
+#container .header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 99;
+  width: 100%;
+  height: 80px;
+  padding: 18px 0;
+  background: rgba(0, 0, 0, 0.6);
+  box-sizing: border-box;
+}
+#container .header:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+#container .header .logo {
+  float: left;
+  margin-left: 30px;
+}
+#container .header .nav-wra {
+  float: right;
+}
+#container .header .nav-wra .nav-btn {
+  margin-right: 30px;
+}
+#container .header .nav-wra .nav-btn .nav-img {
+  display: none;
+}
+#container .header .nav-wra .nav-btn .old-img {
+  display: block;
+  padding-top: 8px;
+}
+#container .header .nav-wra .nav-btn .new-img {
+  display: none;
+  font-size: 60px;
+  color: #fff;
+}
+#container .header .nav-list {
+  position: absolute;
+  left: 0;
+  top: 80px;
+  z-index: 1;
+  width: 90%;
+  color: #999999;
+  background-color: #333333;
+  padding: 0 5%;
+  padding-bottom: 60px;
+  display: none;
+}
+#container .header .nav-list .nav-item {
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  font-size: 24px;
+  padding: 0 2%;
+  border-bottom: 1px solid #666666;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+#container .header .nav-list .nav-item .nav-right {
+  display: block;
+  width: 15px;
+  height: 50px;
+  margin-top: 5px;
+}
+#container .header .nav-list .nav-item .nav-right img {
+  width: 100%;
+}
 #container .content {
   position: relative;
   width: 100%;
@@ -408,4 +480,37 @@ body {
   display: block;
   margin: 30px auto;
   -webkit-transform: rotate(180deg);
+}
+#container .tab {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 99;
+  display: flex;
+  width: 100%;
+  background: #3178ea;
+}
+#container .tab .tab-item {
+  flex: 1;
+  padding: 15px 0;
+}
+#container .tab .tab-item img {
+  display: block;
+  width: 170px;
+  margin: 0 auto;
+}
+#container .wechat-mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  background: rgba(0, 0, 0, 0.8);
+}
+#container .wechat-mask .wechat-img {
+  position: absolute;
+  top: 35%;
+  left: 23%;
+  width: 54%;
 }

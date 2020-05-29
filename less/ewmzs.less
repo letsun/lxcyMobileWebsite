@@ -156,13 +156,13 @@ body {
 			.content-one-img{
 				text-align: center;
 				margin-top: 80px;
-				margin-bottom: 40px;
+				margin-bottom: 10px;
 			}
 			.content-one-nav{
 				font-size: 18px;
 				text-align: center;
 				font-weight: bolder;
-				margin-bottom: 30px;
+				margin-bottom: 40px;
 			}
 			.content-one-list{
 				width: 100%;
@@ -196,7 +196,23 @@ body {
 							flex-wrap: wrap;
 							height: 110px;
 							overflow: hidden;
+							
 							div{
+								border: #71a0f2 solid 1px;
+								border-radius: 15px;
+								display: inline-block;
+								padding-left: 10px;
+								padding-right: 10px;
+								height: 24px;
+								line-height: 24px;
+								margin-top: 10px;
+								color: @666;
+								margin-left: 10px;
+								// width: 70px;
+							}
+
+							span {
+								display: block;
 								border: #71a0f2 solid 1px;
 								border-radius: 15px;
 								display: inline-block;
@@ -224,12 +240,16 @@ body {
 			}
 			
 			.content-two-con{
-				padding-top: 70px;
+				padding-top: 10px;
 				margin-left: 55px;;
 				margin-right: 55px;
 				font-size: 18px;
 				font-weight: bolder;
 				color: @white;
+			}
+
+			.content-two-img {
+				margin-top: 30px;
 			}
 			a{
 				position: absolute;
@@ -356,5 +376,52 @@ body {
 			display: block;
 		}
 		
+	}
+
+	.tab {
+		// position: absolute;
+		// left: 0;
+		// bottom: 0;
+		// z-index: 99;
+
+		display: flex;
+
+		width: 100%;
+
+		background: #3178ea;
+
+		.tab-item {
+			flex: 1;
+
+			padding: 15px 0;
+
+			img {
+				display: block;
+
+				width: 170px;
+
+				margin: 0 auto;
+			}
+		}
+	}
+
+	.wechat-mask {
+		position: fixed;
+		top: 0;
+		left: 0;
+
+		width: 100%;
+		height: 100%;
+		display: none;
+
+		background: rgba(0, 0, 0, .8);
+
+		.wechat-img {
+			position: absolute;
+			top: 35%;
+			left: 23%;
+
+			width: 54%;
+		}
 	}
 }

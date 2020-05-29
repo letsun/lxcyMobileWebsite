@@ -226,13 +226,13 @@ body {
 #container .content .content-one .content-one-img {
   text-align: center;
   margin-top: 80px;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 }
 #container .content .content-one .content-one-nav {
   font-size: 18px;
   text-align: center;
   font-weight: bolder;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 #container .content .content-one .content-one-list {
   width: 100%;
@@ -281,6 +281,19 @@ body {
   color: #666;
   margin-left: 10px;
 }
+#container .content .content-one .content-one-list ul li .content-one-list-item span {
+  display: block;
+  border: #71a0f2 solid 1px;
+  border-radius: 15px;
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 24px;
+  line-height: 24px;
+  margin-top: 10px;
+  color: #666;
+  margin-left: 10px;
+}
 #container .content .content-two {
   background: #3176eb;
   position: relative;
@@ -290,12 +303,15 @@ body {
   text-align: center;
 }
 #container .content .content-two .content-two-con {
-  padding-top: 70px;
+  padding-top: 10px;
   margin-left: 55px;
   margin-right: 55px;
   font-size: 18px;
   font-weight: bolder;
   color: #fff;
+}
+#container .content .content-two .content-two-img {
+  margin-top: 30px;
 }
 #container .content .content-two a {
   position: absolute;
@@ -400,4 +416,33 @@ body {
 }
 #container .footer img {
   display: block;
+}
+#container .tab {
+  display: flex;
+  width: 100%;
+  background: #3178ea;
+}
+#container .tab .tab-item {
+  flex: 1;
+  padding: 15px 0;
+}
+#container .tab .tab-item img {
+  display: block;
+  width: 170px;
+  margin: 0 auto;
+}
+#container .wechat-mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  background: rgba(0, 0, 0, 0.8);
+}
+#container .wechat-mask .wechat-img {
+  position: absolute;
+  top: 35%;
+  left: 23%;
+  width: 54%;
 }

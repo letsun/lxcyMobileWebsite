@@ -648,4 +648,51 @@ body {
 			}
 		}
 	}
+
+	.tab {
+		// position: absolute;
+		// left: 0;
+		// bottom: 0;
+		// z-index: 99;
+
+		display: flex;
+
+		width: 100%;
+
+		background: #3178ea;
+
+		.tab-item {
+			flex: 1;
+
+			padding: 15px 0;
+
+			img {
+				display: block;
+
+				width: 170px;
+
+				margin: 0 auto;
+			}
+		}
+	}
+
+	.wechat-mask {
+		position: fixed;
+		top: 0;
+		left: 0;
+
+		width: 100%;
+		height: 100%;
+		display: none;
+
+		background: rgba(0, 0, 0, .8);
+
+		.wechat-img {
+			position: absolute;
+			top: 35%;
+			left: 23%;
+
+			width: 54%;
+		}
+	}
 }

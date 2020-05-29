@@ -2,16 +2,6 @@
 // var baseUrl = "http://192.168.1.27:8081/letsun/gw/json/";
 var baseUrl = "https://mobile.letsun.com.cn/letsun/gw/json/";
 
-$(".item-wechat").on("click",function() {
-    $(".wechat-mask").show();
-});
-
-$(".wechat-mask:not('.wechat-img')").on("click",function() {
-    $(".wechat-mask").hide();
-});
-
-
-
 var type = 2; // 类型（1为 公司新闻，2为 行业动态）
 var budget; // 预算
 var messageList = []; // 留言信息列表
@@ -276,7 +266,7 @@ $(function() {
 					html += '	</div>'
 					html += '</li>'
 
-					for (var i = 0; i < newsList.length; i++) {
+					for (var i = 0; i < 3; i++) {
 						html += '<li>'
 						html += '	<div class="news-title">' + newsList[i].title + '</div>'
 						html += '	<div class="news-content">' + newsList[i].desc + '</div>'

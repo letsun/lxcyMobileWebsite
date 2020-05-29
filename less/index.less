@@ -1,4 +1,3 @@
-
 @import "common/reset";
 
 @green: #7ec61c;
@@ -7,7 +6,8 @@
 @white: #fff;
 @blue: #3176eb;
 
-html,body {
+html,
+body {
 	width: 100%;
 	height: 100%;
 	font-size: 24px;
@@ -31,7 +31,7 @@ body {
 		height: 80px;
 		padding: 18px 0;
 
-		background: rgba(0,0,0,.6);
+		background: rgba(0, 0, 0, .6);
 
 		box-sizing: border-box;
 
@@ -57,7 +57,7 @@ body {
 					display: block;
 					padding-top: 8px;
 				}
-				
+
 				.new-img {
 					display: none;
 					font-size: 60px;
@@ -77,31 +77,31 @@ body {
 			background-color: #333333;
 			padding: 0 5%;
 			padding-bottom: 60px;
-			
+
 			display: none;
-			
-			.nav-item{
+
+			.nav-item {
 				width: 100%;
 				height: 60px;
 				line-height: 60px;
 				font-size: 24px;
-				
+
 				padding: 0 2%;
 				border-bottom: 1px solid #666666;
-				
+
 				display: flex;
 				flex-direction: row;
 				align-items: center;
 				justify-content: space-between;
 				box-sizing: border-box;
 
-				.nav-right{
+				.nav-right {
 					display: block;
 					width: 15px;
 					height: 50px;
 					margin-top: 5px;
-					
-					img{
+
+					img {
 						width: 100%;
 					}
 				}
@@ -118,10 +118,11 @@ body {
 			width: 100%;
 
 			.swiper-slide {
+				height: 500px;
 
 				img {
 					display: block;
-
+					height: 500px;
 					width: 100%;
 				}
 			}
@@ -142,127 +143,149 @@ body {
 				background: #007aff;
 			}
 		}
-		
-		.module-wra{
-			
-			.module{
+
+		.module-wra {
+
+			.module {
 				margin-top: 60px;
-				
-				.module-title{
-					height: 60px;
+
+				.module-title {
+
 					line-height: 60px;
 					text-align: center;
-					
+
 					font-size: 28px;
 				}
-				
-				.module-child-title{
+
+				.module-child-title {
 					text-align: center;
 					font-size: 24px;
 					padding: 0 10px;
+					margin-bottom: 40px;
 				}
 			}
-			
+
 			//module1
-			.module1{
-				
-				.module-list{
+			.module1 {
+
+				.module-list {
 					width: 100%;
 					margin-top: 20px;
 					.clearFix ();
-					
-					.module-item{
+
+					.module-item {
 						float: left;
 						width: 25%;
 						font-size: 22px;
 						text-align: center;
-						
+
 						margin-bottom: 20px;
-						
-						img{
+
+						img {
 							width: 100%;
 						}
 					}
 				}
-				
+
 			}
-			
+
 			//module2
-			.module2{
+			.module2 {
 				width: 100%;
 				background-image: url(../images/1_24.png);
 				background-repeat: no-repeat;
-				background-size: cover;
-				padding-top: 60px;
-				
-				.module-title{
+				background-size: 100% 100%;
+
+
+				.module-title {
 					color: #fff;
 				}
-				.module-child-title{
+
+				.module-child-title {
 					color: #fff;
 				}
-				
-				.tab-wrap{
+
+				.tab-wrap {
 					width: 100%;
-					
-					.tab-title{
+					margin-top: 30px;
+
+					.tab-title {
 						width: 100%;
 						background-color: #162528;
 						.clearFix();
-						
-						.active{
+
+						.active {
 							background-image: url(../images/1_22.png);
 							background-repeat: no-repeat;
 							background-size: cover;
 						}
-						
-						li{
+
+						li {
 							float: left;
 							width: 25%;
 							text-align: center;
 							font-size: 24px;
 							font-weight: 800;
 							color: #fff;
-							
-							span{
+
+							span {
 								display: block;
 								margin: 20px 0;
 							}
-							
-							img{
+
+							img {
 								width: 40px;
 								height: 40px;
 								margin-bottom: 10px;
 							}
 						}
-						
+
 					}
-					
-					.tab-content{
+
+					.tab-content {
 						width: 96%;
-						background-color: #d3d3d5;
+						color: #f4f4f4;
 						border-radius: 20px;
-						
+						height: 530px;
 						margin: 0 auto;
-						
-						li{
+
+						li {
 							position: relative;
 							padding-left: 50%;
 							padding-top: 30px;
 							padding-bottom: 10px;
-							
+
 							display: none;
-							
-							.content-img{
-								width: 46%;
-								position: absolute;
-								top: 50%;
-								left: 10px;
-								margin-top: -150px;
+
+							span {
+								font-weight: bold;
+								font-size: 26px;
 							}
-							
-							p{
-								
+
+							.content-title {
+								width: 600px;
+								margin-left: -300px;
+								font-size: 22px;
+								text-align: center;
+								margin-top: 44px;
+							}
+
+							.content-text {
+								margin-top: 90px;
+								margin-bottom: 20px;
+							}
+
+							.content-img {
+								position: absolute;
+								top: 77%;
+								left: 20px;
+								margin-top: -150px;
+								height: 260px;
+								width: 241px;
+							}
+
+							p {
+
 								font-size: 24px;
 								color: #3077eb;
 								padding-left: 30px;
@@ -271,122 +294,123 @@ body {
 								background-size: 25px;
 								background-position: 0 8px;
 							}
-							
-							.arrow{
+
+							.arrow {
 								text-align: right;
 								padding-right: 30px;
 								margin-top: 10px;
 							}
-							
+
 						}
-						
-						li:nth-of-type(1){
+
+						li:nth-of-type(1) {
 							display: block;
 						}
-						
+
 					}
-					
+
 				}
-				
+
 				//实例图片
-				.demo-img-list{
+				.demo-img-list {
 					margin-top: 40px;
-					
+
 					.clearFix();
-					
-					li{
+
+					li {
 						float: left;
 						width: 50%;
 
 						position: relative;
-						
+
 						img {
 							display: block;
 
 							width: 100%;
 						}
-						
+
 						.demo-img-content {
 							width: 100%;
 							text-align: center;
-							
-							font-size: 18px;						
+
+							font-size: 18px;
 							color: #fff;
-							background: rgba(0,0,0,.7);
-							
+							background: rgba(0, 0, 0, .7);
+
 							position: absolute;
 							left: 0;
 							bottom: 0;
-				
+
 						}
-						
+
 					}
-					
+
 				}
-				
+
 			}
-			
-			
+
+
 			//module3
-			
-			.module3{
+
+			.module3 {
 				width: 100%;
-				
+
 				.news-tab {
 					width: 100%;
 					.clearFix();
-					
+
 					.news-title {
 						float: left;
-						
+
 						width: 50%;
 						height: 60px;
 						line-height: 60px;
 						text-align: center;
-						
+
 						border: 2px solid #3077e9;
 						border-right: 0;
 						box-sizing: border-box;
-						
-						img{
+
+						img {
 							width: 24px;
 							margin-right: 5px;
 						}
-						
-						.title-icon2{
+
+						.title-icon2 {
 							display: none;
 						}
-						.title-icon3{
+
+						.title-icon3 {
 							display: none;
 						}
-						
+
 					}
-					
+
 					.active {
 						color: #fff;
 						background-color: #3077e9;
-						
+
 					}
-					
-					
+
+
 				}
-				
-				
+
+
 				.news {
-					
-					li{
+
+					li {
 						width: 95%;
 						padding: 0 2.5%;
 						border-bottom: 1px solid #cfcfcf;
 						position: relative;
 
 						.clearFix();
-						
+
 						.news-title {
 							font-size: 28px;
 							font-weight: bold;
 							color: #323232;
-							
+
 							margin-top: 30px;
 							margin-bottom: 20px;
 						}
@@ -405,113 +429,119 @@ body {
 
 						.hot-img {
 							display: block;
-
+							height: 250px;
 							width: 100%;
 						}
-						
+
 						.news-img {
 							float: right;
 
-							width: 220px;
-							max-height: 100px;
+							width: 200px;
+							height: 120px;
 						}
-										
+
 						.data-share {
 							.clearFix();
 							color: #999999;
 							margin: 20px 0;
-							
+
 							span {
 								float: left;
 							}
-							
-							.news-date {
-								margin-right: 50px;
-							}
-							
-							.share {
-								float: right;
 
-								img{
+							.news-date {
+								margin-right: 20px;
+							}
+
+							.share {
+								margin-left: 20px;
+
+								img {
 									display: inline-block;
 									vertical-align: middle;
 									margin-right: 10px;
 								}
 							}
 						}
-							
+
 					}
-					
-					
+
+
 				}
-				
+
 			}
-			
-			
+
+
 		}
 	}
-	
+
 	// footer
 	.footer {
 		color: #fff;
 		background-color: #333333;
 		border-bottom: 1px solid #666666;
-		
-		.footer-top{
+
+		.footer-top {
+			position: relative;
 			width: 570px;
 			border-bottom: 1px solid #666;
-			padding: 0 35px 40px 35px;
+			padding: 30px 35px 40px 35px;
 			padding-bottom: 40px;
 			margin: 0 auto;
-			
-			.footer-logo{
-				margin-top: 50px;
+
+			.footer-logo {
+				position: absolute;
+				right: 0;
+				top: 0;
 			}
-			
-			.service-number{
+
+			.service-number {
+				font-size: 34px;
 				color: #3178ea;
 			}
-			.apply-btn{
-				width: 120px;
-				height: 36px;
-				line-height: 36px;
-				font-size: 20px;
+
+			.apply-btn {
+				margin-top: 10px;
+				font-size: 30px;
 				background-color: #3178ea;
 				color: #fff;
+				padding: 10px 20px;
+				border-radius: 15px;
 			}
 		}
-		
-		.footer-list{
+
+		.footer-list {
 			width: 570px;
 			margin: 0 auto;
-			
-			li{
+
+			li {
 				width: 100%;
 				height: 70px;
 				line-height: 70px;
 				color: #999999;
-				
+
 				display: flex;
 				flex-direction: row;
 				align-items: center;
 				justify-content: space-around;
 				box-sizing: border-box;
-				
+
 				border-bottom: 1px solid #999999;
 			}
-			li:nth-of-type(3){
+
+			li:nth-of-type(3) {
 				border-bottom: 0;
 			}
 		}
-		
-		.friend-link{
+
+		.friend-link {
 			line-height: 24px;
 			border-top: 1px solid #999999;
 			padding: 20px 19px;
 			font-size: 18px;
 		}
-		
-		.copy-right{
+
+		.copy-right {
 			font-size: 17px;
 			text-align: center;
 			border-top: 1px solid #999999;
@@ -522,7 +552,7 @@ body {
 		position: absolute;
 		bottom: 100px;
 		right: 20px;
-		z-index: 9999;
+		z-index: 99;
 
 		display: none;
 
@@ -544,7 +574,7 @@ body {
 
 		width: 100%;
 
-		background: #1a2d6f;
+		background: #3178ea;
 
 		.tab-item {
 			flex: 1;
@@ -570,7 +600,7 @@ body {
 		height: 100%;
 		display: none;
 
-		background: rgba(0,0,0,.8);
+		background: rgba(0, 0, 0, .8);
 
 		.wechat-img {
 			position: absolute;
@@ -580,8 +610,9 @@ body {
 			width: 54%;
 		}
 	}
-	
+
 }
+
 .demand-win {
 	display: none;
 	position: fixed;
@@ -593,7 +624,7 @@ body {
 	height: 100%;
 	padding: 40px 20px;
 
-	background: rgba(0,0,0,.7);
+	background: rgba(0, 0, 0, .7);
 
 	box-sizing: border-box;
 
@@ -686,7 +717,7 @@ body {
 
 					width: 100%;
 					height: 36px;
-					padding: 0 10px;
+					padding: 30px 10px;
 
 					line-height: 36px;
 					font-size: 20px;
@@ -753,7 +784,8 @@ body {
 						margin-left: 0;
 					}
 				}
-				.multi-active{
+
+				.multi-active {
 					color: #fff;
 					background: #3177eb;
 				}

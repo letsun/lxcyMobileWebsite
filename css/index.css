@@ -193,8 +193,12 @@ body {
 .container .content .swiper-container {
   width: 100%;
 }
+.container .content .swiper-container .swiper-slide {
+  height: 500px;
+}
 .container .content .swiper-container .swiper-slide img {
   display: block;
+  height: 500px;
   width: 100%;
 }
 .container .content .swiper-pagination .swiper-pagination-bullet {
@@ -210,7 +214,6 @@ body {
   margin-top: 60px;
 }
 .container .content .module-wra .module .module-title {
-  height: 60px;
   line-height: 60px;
   text-align: center;
   font-size: 28px;
@@ -219,6 +222,7 @@ body {
   text-align: center;
   font-size: 24px;
   padding: 0 10px;
+  margin-bottom: 40px;
 }
 .container .content .module-wra .module1 .module-list {
   width: 100%;
@@ -243,8 +247,7 @@ body {
   width: 100%;
   background-image: url(../images/1_24.png);
   background-repeat: no-repeat;
-  background-size: cover;
-  padding-top: 60px;
+  background-size: 100% 100%;
 }
 .container .content .module-wra .module2 .module-title {
   color: #fff;
@@ -254,6 +257,7 @@ body {
 }
 .container .content .module-wra .module2 .tab-wrap {
   width: 100%;
+  margin-top: 30px;
 }
 .container .content .module-wra .module2 .tab-wrap .tab-title {
   width: 100%;
@@ -288,8 +292,9 @@ body {
 }
 .container .content .module-wra .module2 .tab-wrap .tab-content {
   width: 96%;
-  background-color: #d3d3d5;
+  color: #f4f4f4;
   border-radius: 20px;
+  height: 530px;
   margin: 0 auto;
 }
 .container .content .module-wra .module2 .tab-wrap .tab-content li {
@@ -299,12 +304,28 @@ body {
   padding-bottom: 10px;
   display: none;
 }
+.container .content .module-wra .module2 .tab-wrap .tab-content li span {
+  font-weight: bold;
+  font-size: 26px;
+}
+.container .content .module-wra .module2 .tab-wrap .tab-content li .content-title {
+  width: 600px;
+  margin-left: -300px;
+  font-size: 22px;
+  text-align: center;
+  margin-top: 44px;
+}
+.container .content .module-wra .module2 .tab-wrap .tab-content li .content-text {
+  margin-top: 90px;
+  margin-bottom: 20px;
+}
 .container .content .module-wra .module2 .tab-wrap .tab-content li .content-img {
-  width: 46%;
   position: absolute;
-  top: 50%;
-  left: 10px;
+  top: 77%;
+  left: 20px;
   margin-top: -150px;
+  height: 260px;
+  width: 241px;
 }
 .container .content .module-wra .module2 .tab-wrap .tab-content li p {
   font-size: 24px;
@@ -421,12 +442,13 @@ body {
 }
 .container .content .module-wra .module3 .news li .hot-img {
   display: block;
+  height: 250px;
   width: 100%;
 }
 .container .content .module-wra .module3 .news li .news-img {
   float: right;
-  width: 220px;
-  max-height: 100px;
+  width: 200px;
+  height: 120px;
 }
 .container .content .module-wra .module3 .news li .data-share {
   color: #999999;
@@ -441,10 +463,10 @@ body {
   float: left;
 }
 .container .content .module-wra .module3 .news li .data-share .news-date {
-  margin-right: 50px;
+  margin-right: 20px;
 }
 .container .content .module-wra .module3 .news li .data-share .share {
-  float: right;
+  margin-left: 20px;
 }
 .container .content .module-wra .module3 .news li .data-share .share img {
   display: inline-block;
@@ -457,25 +479,29 @@ body {
   border-bottom: 1px solid #666666;
 }
 .container .footer .footer-top {
+  position: relative;
   width: 570px;
   border-bottom: 1px solid #666;
-  padding: 0 35px 40px 35px;
+  padding: 30px 35px 40px 35px;
   padding-bottom: 40px;
   margin: 0 auto;
 }
 .container .footer .footer-top .footer-logo {
-  margin-top: 50px;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 .container .footer .footer-top .service-number {
+  font-size: 34px;
   color: #3178ea;
 }
 .container .footer .footer-top .apply-btn {
-  width: 120px;
-  height: 36px;
-  line-height: 36px;
-  font-size: 20px;
+  margin-top: 10px;
+  font-size: 30px;
   background-color: #3178ea;
   color: #fff;
+  padding: 10px 20px;
+  border-radius: 15px;
 }
 .container .footer .footer-list {
   width: 570px;
@@ -511,7 +537,7 @@ body {
   position: absolute;
   bottom: 100px;
   right: 20px;
-  z-index: 9999;
+  z-index: 99;
   display: none;
   width: 13%;
   cursor: pointer;
@@ -525,7 +551,7 @@ body {
   z-index: 99;
   display: flex;
   width: 100%;
-  background: #1a2d6f;
+  background: #3178ea;
 }
 .container .tab .tab-item {
   flex: 1;
@@ -632,7 +658,7 @@ body {
   display: block;
   width: 100%;
   height: 36px;
-  padding: 0 10px;
+  padding: 30px 10px;
   line-height: 36px;
   font-size: 20px;
   background: #f6f6f6;

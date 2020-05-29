@@ -188,6 +188,8 @@ $(function() {
 					$('.info-title').html(data.title);	
 					$('.service-dec').html(data.serviceDesc);
 					$('.info-dec').html(data.desc);
+
+					$('.info-bottom').html(data.content)
 				} else {
 					common.alert({
 						content: res.msg,

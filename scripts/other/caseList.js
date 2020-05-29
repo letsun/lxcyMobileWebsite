@@ -8,6 +8,8 @@ var budget; // 预算
 var messageList = []; // 留言信息列表
 
 $(function() {
+
+	
 	//右上角按钮切换
 	$(".header .nav-wra .nav-btn").click(function() {
 		$(".header .nav-wra .nav-btn .old-img").toggle();

@@ -1,6 +1,13 @@
 window.common = {};
 
 (function ($) {
+    $(".item-wechat").on("click",function() {
+        $(".wechat-mask").show();
+    });
+    $(".wechat-mask:not('.wechat-img')").on("click",function() {
+        $(".wechat-mask").hide();
+    });
+
     /**
      * @func common.alert()
      * @desc 弹框组件
