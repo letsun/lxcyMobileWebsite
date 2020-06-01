@@ -24,7 +24,7 @@ $(function() {
 		let index = $(this).index();
 		// console.log(index)
 		if(index == 0 || index == 1 || index == 2){
-			window.location.href = 'caseList.html';
+			window.location.href = 'phonecaseList.html';
 		}else {
 			$('.demand-win').show();
 		}

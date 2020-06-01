@@ -37,7 +37,7 @@ $(function () {
 	// 点击热点新闻标题
 	$('.hotNews-title').on('click', function () {
 		let id = $(this).attr('data-id');
-		window.location.href = 'newsDetail.html?id=' + id;
+		window.location.href = 'phonenewsDetail.html?id=' + id;
 	})
 
 	// 点击tab
@@ -183,7 +183,7 @@ $(function () {
 	function render(data) {
 		var html = '';
 		for (var i = 0; i < data.length; i++) {
-			html += '<a class="item" href="newsDetail.html?id=' + data[i].id + '">'
+			html += '<a class="item" href="phonenewsDetail.html?id=' + data[i].id + '">'
 			html += '    <div class="item-infor">'
 			html += '        <div class="item-title">' + data[i].title + '</div>'
 			html += '        <div class="item-dec">' + data[i].desc + '</div>'

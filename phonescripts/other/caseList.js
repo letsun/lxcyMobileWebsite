@@ -242,7 +242,7 @@ $(function() {
 	function render(data) {
 		var html = '';
 		for (var i = 0; i < data.length; i++) {
-			html += '<a class="case-item" href="caseDetail.html?id=' + data[i].id + '">'
+			html += '<a class="case-item" href="phonecaseDetail.html?id=' + data[i].id + '">'
 			html += '	<img class="case-img" src="' + data[i].thumbnail + '" alt="">'
 			html += '	<div class="case-title">' + data[i].title + '</div>'
 			html += '	<div class="case-dec">'

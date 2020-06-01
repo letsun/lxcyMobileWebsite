@@ -22,7 +22,7 @@ $(function() {
 		let index = $(this).index();
 		// console.log(index)
 		if(index == 0 || index == 1 || index == 2){
-			window.location.href = 'caseList.html';
+			window.location.href = 'phonecaseList.html';
 		}else {
 			$('.demand-win').show();
 		}
@@ -49,7 +49,7 @@ $(function() {
 	
 	// 点击公司新闻和行业动态
 	$('.nav-item').on('click',function(){
-		window.location.href = 'news.html';
+		window.location.href = 'phonenews.html';
 	})
 	
 	// 点击prev-btn上一个案例
