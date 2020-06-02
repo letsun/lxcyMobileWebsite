@@ -188,6 +188,7 @@ body {
 }
 #container .content {
   position: relative;
+  padding-bottom: 80px;
   width: 100%;
 }
 #container .content .content-banner img {
@@ -596,6 +597,10 @@ body {
   color: #73a3f8;
 }
 #container .tab {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: 99;
   display: flex;
   width: 100%;
   background: #3178ea;

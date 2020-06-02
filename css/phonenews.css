@@ -189,6 +189,7 @@ body {
 }
 #container .content {
   position: relative;
+  padding-bottom: 80px;
   width: 100%;
   /*导航*/
   /*热点新闻*/
@@ -482,7 +483,7 @@ body {
   -webkit-transform: rotate(180deg);
 }
 #container .tab {
-  position: absolute;
+  position: fixed;
   left: 0;
   bottom: 0;
   z-index: 99;

@@ -346,6 +346,9 @@ body {
   float: right;
 }
 #container .tab {
+  position: fixed;
+  left: 0;
+  bottom: 0;
   z-index: 99;
   display: flex;
   width: 100%;

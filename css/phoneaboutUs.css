@@ -186,6 +186,7 @@ body {
 }
 #container .content {
   position: relative;
+  padding-bottom: 80px;
   width: 100%;
 }
 #container .content .top-img {
@@ -331,7 +332,7 @@ body {
   color: #fff;
 }
 #container .tab {
-  position: absolute;
+  position: fixed;
   left: 0;
   bottom: 0;
   z-index: 99;

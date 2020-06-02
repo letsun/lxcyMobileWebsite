@@ -64,6 +64,7 @@ $(function () {
 					$('#title').html(res.result.title);
 					$('#desc').html(res.result.desc);
 					$('#policyReq').html(res.result.policyReq);
+					$('#planUs').html(res.result.planUs)
 				}
 			}
 		});

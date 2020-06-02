@@ -8,6 +8,11 @@ window.common = {};
         $(".wechat-mask").hide();
     });
 
+
+    $('.logo').on('click',function(){
+        window.location.href='phoneindex.html'
+    })
+
     /**
      * @func common.alert()
      * @desc 弹框组件

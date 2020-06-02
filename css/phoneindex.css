@@ -545,7 +545,7 @@ body {
   animation: shanShuo 0.9s linear infinite alternate;
 }
 .container .tab {
-  position: absolute;
+  position: fixed;
   left: 0;
   bottom: 0;
   z-index: 99;
