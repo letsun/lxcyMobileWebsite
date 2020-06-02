@@ -188,6 +188,7 @@ body {
 }
 .container .content {
   position: relative;
+  padding-bottom: 80px;
   width: 100%;
 }
 .container .content .swiper-container {

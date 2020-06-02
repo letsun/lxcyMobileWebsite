@@ -192,7 +192,7 @@ $(function () {
 			html += '            <div class="item-time">' + data[i].publishTime + '</div>'
 			html += '           <div class="item-browse"><span>' + data[i].browseNum + '</span>人浏览</div>'
 			html += '            <div class="item-share">'
-			html += '                <img class="share-key" src="../images/1_52.png" alt="">'
+			html += '                <img class="share-key" src="../phoneimages/1_52.png" alt="">'
 			html += '                <div class="share-val">分享</div>'
 			html += '            </div>'
 			html += '        </div>'

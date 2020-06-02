@@ -262,7 +262,7 @@ $(function() {
 					html += '	<div class="data-share">'
 					html += '		<span class="news-date">' + hotNews[0].publishTime + '</span>'
 					html += '		<span class="times">' + hotNews[0].browseNum + '人浏览</span>'
-					html += '		<span class="share"><img src="../images/1_52.png">分享</span>'
+					html += '		<span class="share"><img src="../phoneimages/1_52.png">分享</span>'
 					html += '	</div>'
 					html += '</li>'
 
@@ -274,7 +274,7 @@ $(function() {
 						html += '	<div class="data-share">'
 						html += '		<span class="news-date">' + newsList[i].publishTime + '</span>'
 						html += '		<span class="times">' + newsList[i].browseNum + '人浏览</span>'
-						html += '		<span class="share"><img src="../images/1_52.png">分享</span>'
+						html += '		<span class="share"><img src="../phoneimages/1_52.png">分享</span>'
 						html += '	</div>'
 						html += '</li>'
 					}

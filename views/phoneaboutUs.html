@@ -273,9 +273,11 @@
         var swiper = new Swiper('.swiper-container', {
             loop: true,
             autoplay: 2000,
+            slidesPerView: 4,
             pagination: '.swiper-pagination',
             nextButton: '#next',
-            prevButton: '#prev'
+            prevButton: '#prev',
+            autoplayDisableOnInteraction: false,
         });
 
 
